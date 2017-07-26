@@ -40,7 +40,7 @@
 
           <li><a href="<?php echo base_url(); ?>browse" class="text-white">Browse By Game</a></li>
 
-          <li><a href="https://github.com/regimbal93" target="_blank" class="text-white">Fork on GitHub</a></li>
+          <li><a href="https://github.com/OpenXBL/XboxDVR" target="_blank" class="text-white">Fork on GitHub</a></li>
 
         </ul>
 
