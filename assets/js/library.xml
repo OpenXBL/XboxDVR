@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<library-config>
+	<templates>
+		<video>
+		<![CDATA[
+          <div class="card">
+            <img class="thumbnail" src="" alt="">
+           	<div>
+	            <p class="card-text" style="display: inline;"></p>
+				<div class="dropdown" style="float:right;padding-right: 12px;">
+				  <span class="fa fa-ellipsis-h" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+				    <button class="dropdown-item share" type="button" data-toggle="modal" data-target="#shareModal">Share</button>
+				    <button class="dropdown-item copy" type="button"  data-clipboard-text="">Copy to Clipboard</button>
+				  </div>
+				</div>
+	        </div>
+            <div class="overlay">
+            	<div style="margin-top: 25px;">
+					<button type="button" class="btn btn-secondary" id="popup-preview" data-toggle="modal" data-target="#previewModal" style="opacity: 0.4;">
+						<span class="fa fa-xblio"></span>
+					</button>
+					<button type="button" class="btn btn-secondary share" id="popup-share" data-toggle="modal" data-target="#shareModal" style="opacity: 0.4;">
+						<span class="fa fa-xblio fa-share"></span>
+					</button>
+	            	<p class="duration"></p>
+            	</div>
+            	<input type="hidden" id="durationInSeconds" value="" />
+            	<input type="hidden" id="uri" value="" />
+            	<input type="hidden" id="fileSize" value="" />
+            	<input type="hidden" id="savedByUser" value="" />
+            	<input type="hidden" id="userCaption" value="" />
+            	<input type="hidden" id="titleId" value="" />
+            	<input type="hidden" id="titleName" value="" />
+            	<input type="hidden" id="gameClipId" value="" />
+            </div>
+		    <!-- Preview Modal -->
+		    <div class="modal fade" id="previewModal" tabindex="-1" role="dialog" aria-hidden="true">
+		      <div class="modal-dialog" role="document" style="max-width: 672px;">
+		        <div class="modal-content"> 
+		          <div class="modal-header">
+		            <h5 class="modal-title"></h5>
+		            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		              <span aria-hidden="true">&times;</span>
+		            </button>
+		          </div>
+		          <div class="modal-body">
+					  <video id="videojs" class="video-js vjs-default-skin" style="" controls preload="auto" width="640" height="264"
+					  poster="" data-setup="{}">
+					    <source id="clipUri" src="" type='video/mp4'>
+					    <p class="vjs-no-js">
+					      To view this video please enable JavaScript, and consider upgrading to a web browser that
+					      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+					    </p>
+					  </video>
+		          </div>
+		          <div class="modal-footer">
+		          	<a href="" id="download" target="_blank" class="btn btn-secondary">Download</a>
+		            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+          </div>
+		]]>
+		</video>
+		<image>
+		<![CDATA[
+          <div class="card">
+            <img class="thumbnail" src="" alt="">
+           	<div>
+	            <p class="card-text" style="display: inline;"></p>
+				<div class="dropdown" style="float:right;padding-right: 12px;">
+				  <span class="fa fa-ellipsis-h" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+				    <button class="dropdown-item share" type="button" data-toggle="modal" data-target="#shareModal">Share</button>
+				    <button class="dropdown-item copy" type="button"  data-clipboard-text="">Copy to Clipboard</button>
+				  </div>
+				</div>
+	        </div>
+            <div class="overlay">
+            	<div style="margin-top: 25px;">
+					<button type="button" class="btn btn-secondary" id="popup-preview" data-toggle="modal" data-target="#previewModal" style="opacity: 0.4;">
+						<span class="fa fa-xblio"></span>
+					</button>
+					<button type="button" class="btn btn-secondary share" id="popup-share" data-toggle="modal" data-target="#shareModal" style="opacity: 0.4;">
+						<span class="fa fa-xblio fa-share"></span>
+					</button>
+            	</div>
+            	<input type="hidden" id="uri" value="" />
+            	<input type="hidden" id="fileSize" value="" />
+            	<input type="hidden" id="savedByUser" value="" />
+            	<input type="hidden" id="userCaption" value="" />
+            	<input type="hidden" id="titleId" value="" />
+            	<input type="hidden" id="titleName" value="" />
+            	<input type="hidden" id="screenshotId" value="" />
+            </div>
+		    <!-- Preview Modal -->
+		    <div class="modal fade" id="previewModal" tabindex="-1" role="dialog" aria-hidden="true">
+		      <div class="modal-dialog" role="document" style="max-width: 672px;">
+		        <div class="modal-content"> 
+		          <div class="modal-header">
+		            <h5 class="modal-title"></h5>
+		            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		              <span aria-hidden="true">&times;</span>
+		            </button>
+		          </div>
+		          <div class="modal-body">
+					  <img src="" id="preview" style="max-width: 640px;" />
+		          </div>
+		          <div class="modal-footer">
+		          	<a href="" id="download" target="_blank" class="btn btn-secondary">Download</a>
+		            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+          </div>
+		]]>
+		</image>
+	</templates>
+</library-config>

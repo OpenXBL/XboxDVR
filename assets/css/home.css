@@ -1,0 +1,21 @@
+.video {
+    position: absolute;
+    top: -160px;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height:auto;
+    width:auto;
+    filter: blur(15px) grayscale(1);
+}
+
+.jumbotron-heading {
+  font-weight: 700;
+}
+.jumbotron {
+    position: relative;
+    height:300px;
+    width:100%;
+    overflow: hidden;
+    color: #fff;
+}

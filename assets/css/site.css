@@ -1,0 +1,223 @@
+body {
+
+  min-height: 75rem; 
+
+}
+
+
+
+.navbar {
+
+  margin-bottom: 0;
+
+}
+
+
+
+.jumbotron {
+
+  padding-top: 6rem;
+
+  padding-bottom: 6rem;
+
+  margin-bottom: 0;
+
+  background-color: #fff;
+
+}
+
+
+
+.jumbotron p:last-child {
+
+  margin-bottom: 0;
+
+}
+
+
+
+.jumbotron-heading {
+
+  font-weight: 300;
+
+}
+
+
+
+.jumbotron .container {
+
+  max-width: 40rem;
+
+}
+
+
+
+.album {
+
+  min-height: 50rem;
+
+  padding-top: 3rem;
+
+  padding-bottom: 3rem;
+
+  background-color: #f7f7f7;
+
+}
+
+
+
+.card {
+
+  float: left;
+
+  width: 33.333%;
+
+  padding: .75rem;
+
+  margin-bottom: 2rem;
+
+  border: 0;
+
+}
+
+
+
+.card > img {
+
+  margin-bottom: .75rem;
+
+}
+
+
+
+.card-text {
+
+  font-size: 85%;
+
+}
+
+
+
+footer {
+
+  padding-top: 3rem;
+
+  padding-bottom: 3rem;
+
+}
+
+
+
+footer p {
+
+  margin-bottom: .25rem;
+
+}
+
+
+
+
+
+/*******
+    
+  
+    MEDIA CARDS
+
+
+********/
+
+.overlay {
+    display:none;
+}
+.card:hover .overlay {
+    width:356px;
+    height:208px;
+    background:rgba(0,0,0,.5);
+    position:absolute;
+    top:10px;
+    left:12px;
+    display:inline-block;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    text-align:center;
+    color:white;
+    padding:12px;
+    font-size:20px;
+}
+
+.fa-xblio {
+    font-size: 40pt;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.fa-ellipsis-h {
+    cursor: pointer;
+}
+
+.loading {
+    padding: 50px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1.2px;
+}
+
+.thumbnail {
+  max-height: 208px;
+}
+
+
+
+
+/*******
+    
+  
+    SNACKBAR
+
+
+********/
+
+
+
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
