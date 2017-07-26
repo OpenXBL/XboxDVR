@@ -3,6 +3,9 @@ This script was developed to showcase the power of OpenXBL. Built using CodeIgni
 
 Part of the [XBL.IO](https://xbl.io) feature set.
 
+## Demo
+Check out a [demo here](https://regimbal.me/xboxdvr).
+
 ## Installation
 1) Upload contents to your web root.
 
